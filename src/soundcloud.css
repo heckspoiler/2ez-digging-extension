@@ -1,0 +1,9 @@
+.sc-button-group {
+    width: 100%;
+}
+
+.logo-icon {
+    height: 100%;
+    width: auto;
+    object-fit: contain;
+}

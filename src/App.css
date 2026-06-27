@@ -1,0 +1,21 @@
+#root {
+  --blue: #3d5aa9;
+  --yellow: #fef6a6;
+
+  background-color: var(--blue);
+  color: var(--yellow);
+}
+
+#main {
+  width: 48rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.signup-form {
+  width: 100%;
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+}

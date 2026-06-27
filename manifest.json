@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "version": "1.0.0",
+  "name": "chopd",
+  "action": {
+    "default_popup": "index.html"
+  },
+  "permissions": ["scripting"],
+  "host_permissions": ["http://*/*", "https://*/*/"],
+  "icons": {
+    "32": "icon32.png",
+    "64": "icon32.png"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["icon32.png", "32-light.png"],
+      "matches": ["https://*.soundcloud.com/*"]
+    }
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://*.soundcloud.com/*"],
+      "css": ["src/soundcloud.css"],
+      "js": ["src/utils/injectButton.ts"]
+    }
+  ]
+}
