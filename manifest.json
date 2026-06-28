@@ -5,8 +5,16 @@
   "action": {
     "default_popup": "index.html"
   },
-  "permissions": ["scripting"],
-  "host_permissions": ["http://*/*", "https://*/*/"],
+  "background": {
+    "service_worker": "src/background/index.ts",
+    "type": "module"
+  },
+  "permissions": ["scripting", "storage", "tabs"],
+  "host_permissions": [
+    "http://localhost:8000/*",
+    "https://vfrqsszhigepwyljodaa.supabase.co/*",
+    "https://*.soundcloud.com/*"
+  ],
   "icons": {
     "32": "icon32.png",
     "64": "icon32.png"
